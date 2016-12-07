@@ -1,0 +1,110 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html ng-app="softlabs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftLabs</title>
+
+    <environment names="Development">
+
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="~/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+        <link href="~/plugins/owl-carousel/owl.theme.css" rel="stylesheet" />
+        <link href="~/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" />
+        <link href="~/plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet" />
+        <link href="~/plugins/Icons/et-line-font/style.css" rel="stylesheet" />
+        <link href="~/plugins/animate.css/animate.css" rel="stylesheet" />
+        <link href="~/plugins/animate.css/set.css" rel="stylesheet" />
+       
+        <link href="~/css/main.css" rel="stylesheet" />
+
+        
+
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/bootstrap-assets/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link href="~/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/plugins/owl-carousel/owl.theme.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/plugins/Icons/et-line-font/style.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/plugins/animate.css/animate.css" rel="stylesheet" asp-append-version="true" />\
+        <link href="~/plugins/animate.css/set.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/main.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+    @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
+</head>
+<body>
+    <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+    <!-- Header
+    ============================================= -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="home">SoftLabs</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+               
+                <ul class="nav navbar-nav ">
+                    <li><a ui-sref="order.general" class="btn btn-transparent navbar-btn">Order</a></li>
+                    <li><a href="#services" class="page-scroll">Services</a></li>
+                    <li><a href="#works" class="page-scroll">Works</a></li>
+                    <li><a href="#team" class="page-scroll">Team</a></li>
+                    <li><a href="#contact" class="page-scroll">Contact</a></li>
+                  
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    
+    <div ui-view></div>
+
+    <footer>
+        <div class="container">
+            <h1>SoftLabs</h1>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+            </div>
+            <h6>&copy; 2016 SoftLabs</h6>
+        </div>
+    </footer>
+
+    <environment names="Development">
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+     
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.easing.min.js"></script>
+        <script src="~/plugins/countTo/jquery.countTo.js"></script>
+        <script src="~/plugins/inview/jquery.inview.min.js"></script>
+        <script src="~/plugins/Lightbox/dist/js/lightbox.min.js"></script>
+        <script src="~/plugins/WOW/dist/wow.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="~/js/custom.js" asp-append-version="true"></script>
+        <script src="~/lib/angular/angular.min.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-resource.js"></script>
+      
+        <script src="~/Angular/LabsClient.js"></script>
+    </environment>
+
+
+</body>
+</html>

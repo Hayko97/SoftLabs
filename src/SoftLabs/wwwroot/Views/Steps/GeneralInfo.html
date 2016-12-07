@@ -1,0 +1,81 @@
+﻿<script>
+    $(document).ready(function () {
+        $(".stebBtns button").prop("disabled", true);
+        $("#general").prop("disabled", false);
+    });
+</script>
+
+<form ng-controller="generalCtrl" name="generalForm"  novalidate>
+
+    <h2 align="center">General Information</h2>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <div class="form-group" ng-class="{ 'has-error' : generalForm.fullname.$invalid && !generalForm.fullname.$pristine }">
+            <input type="text" name="fullname" class="form-control" placeholder="FullName" ng-model="fullname" required>
+            <span style="color:red" ng-show="generalForm.fullname.$dirty && generalForm.fullname.$invalid">
+                <span ng-show="generalForm.fullname.$error.required">Fullname is required.</span>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <div class="form-group" ng-class="{ 'has-error' : generalForm.email.$invalid && !generalForm.email.$pristine }">
+            <input type="email" name="email" class="form-control" ng-model="email" required placeholder="Enter email">
+            <span style="color:red" ng-show="generalForm.email.$dirty && generalForm.email.$invalid">
+                <span ng-show="generalForm.email.$error.required">Email is required.</span>
+                <span ng-show="generalForm.email.$error.email">Invalid email address.</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-4">
+        <div class="form-group" ng-class="{ 'has-error' : generalForm.phone.$invalid && !generalForm.phone.$pristine }">
+            <input type="tel" name="phone" class="form-control" ng-model="phone" required placeholder="Phone">
+            <span style="color:red" ng-show="generalForm.phone.$dirty && generalForm.phone.$invalid">
+                <span ng-show="generalForm.phone.$error.required">Phone number is required.</span>
+                <span ng-show="generalForm.phone.$error.number">Invalid phone number </span>
+            </span>
+
+        </div>
+    </div>
+
+    <div class="col-md-12" id="textarea">
+        <div class="form-group" ng-class="{ 'has-error' : generalForm.description.$invalid && !generalForm.description.$pristine }">
+            <textarea type="text" class="form-control" placeholder="Short Description" required ng-model="description" name="description"></textarea>
+            <span style="color:red" ng-show="generalForm.description.$dirty && generalForm.description.$invalid">
+                <span ng-show="generalForm.description.$error.required">Description is required.</span>
+              
+            </span>
+        </div>
+
+    </div>
+    <div class="form-group">
+
+        <div class="col-md-4">
+
+            <label>e-commerce<input type="radio" name="type" value="e-commerce" ng-model="type"></label>
+
+        </div>
+        <div class="col-md-4">
+
+            <label>Information Site<input type="radio" name="type" value="InfoSite" ng-model="type"></label>
+
+        </div>
+        <div class="col-md-4">
+
+            <label>Social network<input type="radio" name="type" value="SocialNetwork" ng-model="type"></label>
+
+        </div>
+    </div>
+
+
+    <div class="form-group">
+
+
+        <div class="col-md-4 col-md-offset-4">
+
+            <button ng-click="generalSend()" ng-disabled="generalForm.$invalid"  class="btn btn-transparent myBtn" style="width:100%;">Next</button>
+        </div>
+        
+
+
+    </div>
+</form>

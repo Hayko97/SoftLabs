@@ -1,0 +1,27 @@
+﻿<script>
+    $(document).ready(function () {
+        $(".stebBtns button").prop("disabled", false);
+        $("#general").prop("disabled", true);
+    });
+</script>
+<form ng-controller="summaryCtrl" name="designForm">
+    <div class="form-group">
+        <h2 align="center">Summary</h2>
+
+        <div class="col-md-12 col-md-offset-4">
+
+            <Label>Primary Price<input type="number" name="price" ng-model="primaryPrice" placeholder="Type your primary price" class="form-control" style="width:150%;height:40px;"></Label>
+
+        </div>
+
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-4 col-md-offset-4">
+
+            <Button ng-click="summarySend()" class="btn btn-transparent myBtn" style="width:100%; ">Send</Button>
+        </div>
+
+
+    </div>
+</form>

@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html ng-app="labsAdmin">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+             
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="main" >Dashboard</a></li>
+                <li><a ui-sref="messages" >Messages</a></li>
+                <li><a ui-sref="orders" >Orders</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div ui-view></div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script src="~/lib/angular/ui-bootstrap-tpls-2.3.0.min.js"></script>
+    <script src="~/Angular/LabsAdmin.js"></script>
+</body>
+</html>

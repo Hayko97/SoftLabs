@@ -1,0 +1,39 @@
+﻿<script>
+    $(document).ready(function () {
+        $(".stebBtns button").prop("disabled", false)
+        $("#general").prop("disabled", true)
+    });
+</script>
+<form name="functionalForm" ng-controller="functionalCtrl">
+    <div class="form-group">
+        <h2 align="center">Functional</h2>
+        <div class="col-md-3 col-md-offset-1">
+
+            <Label><input type="checkbox" name="isChat" ng-model="isChat">Chat</Label>
+
+        </div>
+        <div class="col-md-3">
+
+            <Label><input type="checkbox" name="isAuth" ng-model="isAuth"> User Authentication</Label>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+
+            <Label><input type="checkbox" name="isForum" ng-model="isForum">Forum</Label>
+        </div>
+        <div class="col-md-12 ">
+            <textarea type="text" class="form-control" placeholder="Custom functional...short description" ng-model="funcDescription"></textarea>
+
+        </div>
+
+    </div>
+    <div class="form-group">
+
+
+        <div class="col-md-4 col-md-offset-4">
+
+            <Button ng-click="functionalSend()" class="btn btn-transparent myBtn" style="width:100%; ">Next</Button>
+        </div>
+
+
+    </div>
+</form>

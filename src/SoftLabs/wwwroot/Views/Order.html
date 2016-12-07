@@ -1,0 +1,114 @@
+﻿<script>
+    $("footer").remove();
+</script>
+<style>
+    body {
+        background-image: url('../img/orderbackground.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #order {
+        margin-top: 110px;
+        margin-bottom: 30px;
+    }
+
+        #order input {
+            border: 0px;
+            border-radius: 3px;
+            min-height: 30px;
+        }
+
+        #order textarea {
+            margin-top: 8px;
+            border: none;
+            border-radius: 3px;
+            min-height: 100px;
+        }
+
+        #order input[type=radio] {
+            width: 20px;
+            height: 20px;
+        }
+
+        #order input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+        }
+
+
+    #orderForm {
+        padding-bottom: 20px;
+        background: rgba(255,255,255,0.8);
+    }
+
+
+    #order .stebBtns {
+        padding: 0;
+    }
+
+    #order button {
+        width: 100%;
+        border-radius: 0px;
+        background: #24242a;
+        border: none;
+        border-right: 1px solid #fff;
+    }
+
+        #order button:hover {
+            background: #fff;
+            color: #24242a;
+            border-right: 1px solid #fff;
+        }
+
+        #order button:focus, #order a:active {
+            background: #fff;
+            color: #24242a;
+            border-right: 1px solid #fff;
+        }
+
+
+    #order .myBtn {
+        background: #24242a;
+        color: #fff;
+        margin-top: 30px;
+    }
+
+        #order .myBtn:hover {
+            background: #fff;
+            color: #24242a;
+        }
+
+    @media (max-width:990px) {
+        #textarea {
+            margin-top: 20px;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="row" id="order">
+        <div class="col-md-8 col-md-offset-2 ">
+            <h2 align="center" style="color:#fff;">Tell us about your project</h2>
+        </div>
+        <div class="col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-12" id="orderForm">
+
+            <div class="row " id="category">
+
+                <div class="col-md-3 col-sm-3 col-xs-3 stebBtns ">
+                    <button ui-sref=".general" class="btn btn-transparent " id="general">General Info</button>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 stebBtns">
+                    <button ui-sref=".functional" class="btn btn-transparent " id="functional">Functional</button>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 stebBtns">
+                    <button ui-sref=".design" class="btn btn-transparent " id="design">Design</button>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 stebBtns">
+                    <button ui-sref=".summary" class="btn btn-transparent" id="summary">Summary</button>
+                </div>
+
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+</div>

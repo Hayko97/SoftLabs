@@ -1,0 +1,713 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/* ==========================================================================
+Global Styles
+========================================================================== */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #0d0d0d;
+    overflow-x: hidden;
+}
+
+.sep {
+    max-width: 80px;
+    border: 2px solid #0d0d0d;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.light-sep {
+    max-width: 80px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+h1 {
+    font-size: 72px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+}
+
+h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+}
+
+h3 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+Buttons Styles
+========================================================================== */
+
+.btn-transparent {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+    .btn-transparent:hover,
+    .btn-transparent:focus,
+    .btn-transparent:active {
+        background: #fff;
+        color: #0d0d0d;
+        text-decoration: none;
+    }
+
+.btn-light {
+    background: #fff;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #0d0d0d;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+    .btn-light:hover,
+    .btn-light:focus,
+    .btn-light:active {
+        background: transparent;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.btn-block {
+    background: #24242a;
+    padding: 15px 0;
+    font-size: 16px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 3px solid #24242a;
+}
+
+    .btn-block:hover,
+    .btn-block:focus,
+    .btn-block:active {
+        background: #fff;
+        color: #0d0d0d;
+        text-decoration: none;
+    }
+
+/* ==========================================================================
+Layout 
+========================================================================== */
+.dark-bg {
+    background: #24242a;
+}
+
+.light-bg {
+    background: #fff;
+}
+
+/* ==========================================================================
+Preloader Style
+========================================================================== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background: #24242a;
+}
+
+    .preloader i {
+        color: #fff;
+        position: absolute;
+        font-size: 36px;
+        line-height: 36px;
+        top: 50%;
+        left: 50%;
+        height: 36px;
+        width: 36px;
+        margin-top: -15px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+
+/* ==========================================================================
+Navigation Style
+========================================================================== */
+.navbar {
+    background: #24242a;
+}
+
+.navbar-btn {
+    text-transform: none;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+#myNavbar li a {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+/* ==========================================================================
+Header Style
+========================================================================== */
+#header {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/sliders/slide.jpg');
+    background-size: cover;
+}
+
+    #header h1 {
+        color: #fff;
+    }
+
+#inner-header {
+    width: 100%;
+    height: 500px;
+    margin: 210px auto;
+}
+
+    #inner-header a {
+        display: block;
+        margin: auto;
+        width: 310px;
+    }
+/* ==========================================================================
+Header Style
+========================================================================== */
+#services {
+    background: #24242a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #services h2 {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    #services p {
+        color: #fff;
+    }
+
+    #services .services-box {
+        margin-top: 40px;
+    }
+
+        #services .services-box .col-md-4 {
+            margin-bottom: 20px;
+        }
+
+            #services .services-box .col-md-4 .media-left,
+            #services .services-box .col-md-4 .media-right,
+            #services .services-box .col-md-4 .media-body {
+                padding-right: 30px;
+                vertical-align: baseline;
+            }
+
+                #services .services-box .col-md-4 .media-left p,
+                #services .services-box .col-md-4 .media-right p,
+                #services .services-box .col-md-4 .media-body p {
+                    text-align: left;
+                }
+
+                #services .services-box .col-md-4 .media-left h3,
+                #services .services-box .col-md-4 .media-right h3,
+                #services .services-box .col-md-4 .media-body h3 {
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-align: left;
+                }
+
+                #services .services-box .col-md-4 .media-left span,
+                #services .services-box .col-md-4 .media-right span,
+                #services .services-box .col-md-4 .media-body span {
+                    font-size: 36px;
+                    color: #fff;
+                }
+
+/* ==========================================================================
+Portfolio Style
+========================================================================== */
+#works figcaption a {
+    border: 1px solid #fff;
+    margin-top: 1em;
+    display: inline-block;
+    color: #fff;
+    padding: 0 2em;
+}
+
+    #works figcaption a:hover {
+        text-decoration: none;
+        padding: 0 3em;
+    }
+
+#works h2, #works p {
+    color: #ffffff;
+}
+
+
+#works .portfolioImage {
+    max-height: 600px;
+}
+/* ==========================================================================
+Work Process Style
+========================================================================== */
+#work-process {
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #work-process .col-lg-3 {
+        margin-top: 40px;
+    }
+
+    #work-process h2 {
+        text-transform: uppercase;
+    }
+
+    #work-process h4 {
+        text-transform: uppercase;
+        color: #0d0d0d;
+    }
+
+    #work-process span {
+        font-size: 48px;
+        color: #0d0d0d;
+        margin-bottom: 15px;
+    }
+
+/* ==========================================================================
+Fun Facts Style
+========================================================================== */
+#fun-facts {
+    background: #24242a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #fun-facts .col-lg-3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #fun-facts h2 {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    #fun-facts p {
+        color: #fff;
+    }
+
+    #fun-facts h4 {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    #fun-facts .number {
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    #fun-facts span {
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+/* ==========================================================================
+Our Team Style
+========================================================================== */
+#team {
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #team h2 {
+        text-transform: uppercase;
+    }
+
+    #team .team {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+        #team .team h4 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        #team .team p {
+            color: #a3a3a3;
+        }
+
+        #team .team a {
+            color: #0d0d0d;
+            font-size: 22px;
+            padding-right: 10px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+            #team .team a:hover,
+            #team .team a:focus,
+            #team .team a:active {
+                color: #a3a3a3;
+            }
+
+.teamImg {
+    width: 200px;
+    height: 200px;
+}
+
+/* ==========================================================================
+Testimonials Style
+========================================================================== */
+#testimonials {
+    background-image: url('../img/testimonials/slide3.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #testimonials h2 {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    #testimonials p {
+        color: #fff;
+    }
+
+    #testimonials .item .quote {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+        #testimonials .item .quote .right {
+            margin-left: 40px;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        #testimonials .item .quote .left {
+            float: left;
+            margin-right: 40px;
+            color: #fff;
+        }
+
+    #testimonials .item h5 {
+        color: #fff;
+        line-height: 36px;
+    }
+
+        #testimonials .item h5 span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+    #testimonials .owl-pagination .owl-page.active span {
+        background-color: #fff;
+    }
+
+    #testimonials .owl-pagination .owl-page span {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: transparent;
+        opacity: 1;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+/* ==========================================================================
+Contact Us Style
+========================================================================== */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+    #contact h2 {
+        text-transform: uppercase;
+    }
+
+    #contact form {
+        margin: 40px 0;
+    }
+
+    #contact .form-group {
+        margin-bottom: 35px;
+    }
+
+.form-control {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 2px solid #24242a;
+    color: #0d0d0d;
+    min-height: 45px;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* ==========================================================================
+Google Map Style
+========================================================================== */
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/* ==========================================================================
+Footer Map Style
+========================================================================== */
+footer {
+    background: #24242a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    footer h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    footer .social {
+        margin: 40px 0;
+    }
+
+        footer .social a {
+            color: #fff;
+            margin-left: 20px;
+            margin-right: 20px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+            footer .social a:hover,
+            footer .social a:focus,
+            footer .social a:active {
+                color: #a3a3a3;
+            }
+
+    footer h6 {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+
+
+
+
+.skillbar {
+    font-family: 'Open Sans', 'sans-serif';
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+    .skillbar-title span {
+        display: block;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 20px;
+        height: 35px;
+        line-height: 35px;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #444;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width:924px) {
+    #inner-header {
+        margin: auto;
+        margin-top: 180px;
+    }
+    
+        #inner-header h1 {
+            font-size: 50px;
+        }
+
+        #inner-header h2 {
+            font-size: 30px;
+        }
+
+    #works figcaption h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width:555px) {
+    #inner-header {
+        margin: auto;
+        margin-top: 150px;
+    }
+
+        #inner-header h1 {
+            font-size: 40px;
+        }
+
+        #inner-header h2 {
+            font-size: 25px;
+        }
+
+}
+
+@media (max-width:639px) {
+
+    #works figcaption h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    #works figcaption h2 {
+        font-size: 20px;
+    }
+}
